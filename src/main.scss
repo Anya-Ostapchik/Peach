@@ -1,6 +1,9 @@
+@import "styles/nav";
+@import "styles/header";
+
 html, body{
-    background-color: aqua;
-}
-p{
-    color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }

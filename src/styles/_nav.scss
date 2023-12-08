@@ -1,0 +1,33 @@
+.nav {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    margin: 0 auto;
+    padding: 28px 68px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+  }
+  
+  .nav__logo > svg {
+    width: 125px;
+    height: 25px;
+  }
+  
+  .nav__list {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: flex-end;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+  }
