@@ -7,6 +7,13 @@
     padding: 100px 0;
     box-sizing: border-box;
     text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    &__active{
+        opacity: 1;
+        transition: all 1s;
+        transform: translateY(0%);
+    }
     &__mb{
         margin-bottom: 275px;
     }

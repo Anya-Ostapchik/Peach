@@ -82,6 +82,13 @@
   padding: 100px 0;
   box-sizing: border-box;
   text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+}
+.about__active {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
 }
 .about__mb {
   margin-bottom: 275px;

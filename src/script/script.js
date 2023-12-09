@@ -29,3 +29,16 @@ dropdownList.addEventListener('click', () => {
     mapCities.classList.toggle('cities__active');
     citiesOverlay.classList.toggle('cities__closed');
 });
+
+// появление блока
+const aboutBlock = document.querySelector('.about');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('about__active');
+        }
+      });
+  });
+  
+observer.observe(aboutBlock);
