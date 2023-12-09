@@ -1,0 +1,22 @@
+.about {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.08);
+    padding: 100px 0;
+    box-sizing: border-box;
+    text-align: center;
+    &__mb{
+        margin-bottom: 275px;
+    }
+    &__text {
+        margin: 0;
+        max-width: 865px;
+        color: #444;
+        line-height: 138%;
+        font-size: 27px;
+        font-weight: 500;
+        margin: 0 auto;
+    }
+}
