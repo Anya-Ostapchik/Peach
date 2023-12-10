@@ -4,10 +4,6 @@
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    &__mb {
-        margin-bottom: 50px;
-    }
-
     &__nav {
         display: flex;
         justify-content: space-between;
@@ -66,13 +62,14 @@
         }
     }
     .link__active{
+        color: #A30C33;
         &::before{
             width: 100%;
         }
     }
     &__imgs{
         width: 100%;
-        padding: 0 18px;
+        padding: 0 30px;
         box-sizing: border-box;
     }
     &__img{

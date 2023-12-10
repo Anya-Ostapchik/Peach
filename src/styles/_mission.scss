@@ -1,0 +1,46 @@
+.mission {
+    width: 100%;
+    max-width: 1250px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #A30C33;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+
+    &__img {
+        &_1 {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+        }
+
+        &_2 {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: rotate(180deg) translate(0, 50%);
+        }
+    }
+
+    &__content{
+        position: relative;
+        padding: 150px 0;
+    }
+    &__title{
+        @include title(#FFF);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    &__txt {
+        max-width: 1110px;
+        text-align: center;
+        color: #FFF;
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0 auto;
+    }
+}
