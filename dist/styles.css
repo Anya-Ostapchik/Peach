@@ -541,6 +541,18 @@ html, body {
   gap: 10px;
 }
 
+.arrow {
+  cursor: pointer;
+}
+.arrow:hover rect {
+  fill: #A30C33;
+  transition: 0.3s;
+}
+.arrow:hover path {
+  stroke: #F0F0F0;
+  transition: 0.3s;
+}
+
 .swiper-wrapper {
   margin-bottom: 28px;
 }
