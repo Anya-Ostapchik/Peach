@@ -4,16 +4,30 @@ html, body{
     margin: 0;
     padding: 0;
 }
+.wrap{
+    @media (max-width: 639px){
+        margin: 0 15px;
+    }
+}
 .content{
     display: flex;
     flex-direction: column;
     gap: 102px;
     padding-bottom: 100px;
+    @media (max-width: 479px){
+        gap: 50px;
+    }
 }
 .red {
     color: #B01736;
     font-size: 29px;
     line-height: 120%;
+    @media (max-width: 959px){
+        font-size: 24px;
+    }
+    @media (max-width: 479px){
+        font-size: 15px;
+    }
 }
 .active{
     display: block
@@ -26,7 +40,19 @@ html, body{
     font-weight: 500;
     line-height: 100%;
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    @media (max-width: 1199px){
+        font-size: 46px;
+    }
+    @media (max-width: 959px){
+        font-size: 40px;
+    }
+    @media (max-width: 639px){
+        font-size: 36px;
+    }
+    @media (max-width: 479px){
+        font-size: 24px;
+    }
 }
 
 @import "styles/nav";

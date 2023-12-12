@@ -5,37 +5,78 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 144px;
     justify-content: center;
     margin: 0 auto;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
     padding: 76px 77px;
-    position: relative;
-    &::after{
-        content: "";
+    @media (max-width: 1199px){
+        max-width: 820px;
+    }
+    @media (max-width: 959px){
+        max-width: 640px;
+    }
+    @media (max-width: 639px){
+        padding: 76px 40px;
+    }
+    @media (max-width: 479px){
+        padding: 27px 0px;
+    }
+    &__compensation{
+        margin-bottom: 88px;
+        @media (max-width: 479px){
+            margin-bottom: 23px;
+        }
+    }
+    &__line{
         width: 100%;
         max-width: 1050px;
         height: 1px;
+        border: none;
         background: rgba(0, 0, 0, 0.1);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+    &__motivation{
+        margin-top: 70px;
+        @media (max-width: 479px){
+            margin-top: 26px;
+        }
     }
     &__items{
         display: flex;
-        align-items: flex-start;
-        justify-content: space-around;
         gap: 16px;
+        align-items: flex-start;
+        justify-content: center;
+        @media (max-width: 959px){
+            flex-wrap: wrap;
+        }
+        @media (max-width: 639px){
+            gap: 26px;
+        }
+        @media (max-width: 479px){
+            row-gap: 29px;
+            column-gap: 15px;
+        }
     }
     &__item{
-        width: 19%;
+        width: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex-shrink: 0;
+        @media (max-width: 639px){
+            width: 23%;
+        }
+        @media (max-width: 479px){
+            width: 40%;
+        }
     }
     &__img{
+        width: 100%;
         margin-bottom: 10px;
+        @media (max-width: 479px){
+            width: 67%;
+            margin-bottom: 12px;
+        }
     }
     &__txt{
         text-align: center;
@@ -44,6 +85,13 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 127%;
+        max-width: 179px;
+        @media (max-width: 959px){
+            font-size: 13px;
+        }
+        @media (max-width: 479px){
+            max-width: 150px;
+        }
     }
 }
 .compensation {
@@ -52,6 +100,9 @@
         @include title(#444);
         margin-bottom: 56px;
         text-align: center;
+        @media (max-width: 479px){
+            margin-bottom: 42px;
+        }
     }
 }
 .motivation {
@@ -63,12 +114,25 @@
         font-weight: 500;
         line-height: 147%;
         max-width: 765px;
-        margin: 0 auto 50px;
+        margin: 0;
+        @media (max-width: 639px){
+            font-size: 28px;
+            line-height: 105%;
+        }
+        @media (max-width: 479px){
+            font-size: 19px;
+            line-height: 129%;
+        }
         &_red {
+            margin: 5px auto 50px;
+            text-align: center;
             color: #B01736;
+            @media (max-width: 479px){
+                margin-bottom: 28px;
+            }
         }
     }
     &__items{
-        justify-content: center;
+        column-gap: 0;
     }
 }

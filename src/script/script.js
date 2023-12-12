@@ -30,6 +30,19 @@ dropdownList.addEventListener('click', () => {
     citiesOverlay.classList.toggle('cities__closed');
 });
 
+//submenu
+const titles = document.querySelectorAll('.cities__title');
+const submenu = document.querySelectorAll('.cities__submenu');
+const svg = document.querySelectorAll('.cities__title_svg');
+
+for(let i = 0; i < titles.length; i++){
+    titles[i].addEventListener('click', function(){
+        titles[i].classList.toggle('cities__title_active');
+        submenu[i].classList.toggle('cities__submenu_active');
+        svg[i].classList.toggle('cities__title_svg_active');
+    });
+}
+
 // появление блока
 const aboutBlock = document.querySelector('.about');
 

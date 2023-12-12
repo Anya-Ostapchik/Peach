@@ -4,14 +4,40 @@
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    @media (max-width: 1199px){
+        max-width: 940px;
+    }
+    @media (max-width: 959px){
+        max-width: 640px;
+    }
+    @media (max-width: 479px){
+    }
+    @media (max-width: 320px){
+    }
     &__nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 10px;
         box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
         padding: 29px 54px;
         margin-bottom: 90px;
         position: relative;
+        @media (max-width: 1199px){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 29px 15px;
+        }
+        @media (max-width: 959px){
+            padding-bottom: 0;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 479px){
+            padding: 23px 5px 0;
+            gap: 13px;
+            margin-bottom: 0px;
+        }
     }
 
     &__dropdown-list {
@@ -25,8 +51,15 @@
         cursor: pointer;
         position: relative;
         z-index: 4;
+        @media (max-width: 1199px){
+            font-size: 18px;
+            margin-left: 0px;
+        }
         & > svg{
             margin-left: 10px;
+            @media (max-width: 479px){
+                margin-left: 2px;
+            }
         }
     }
 
@@ -38,6 +71,18 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        @media (max-width: 959px){
+            width: 100%;
+            padding: 29px 0;
+            overflow-x: auto;
+        }
+        @media (max-width: 479px){
+            padding: 0 0 29px;
+            gap: 16px;
+        }
+        & > li{
+            flex-shrink: 0;
+        }
     }
 
     &__link {
@@ -46,6 +91,9 @@
         font-size: 16px;
         transition: .3s;
         position: relative;
+        @media (max-width: 479px){
+            font-size: 12px;
+        }
         &:hover{
             color: #A30C33;
         }
@@ -59,6 +107,9 @@
             background-color: #A30C33;
             margin-top: 26px;
             transition: ease width 0.3s;
+            @media (max-width: 479px){
+                margin-top: 21px;
+            }
         }
     }
     .link__active{
@@ -71,12 +122,17 @@
         width: 100%;
         padding: 0 30px;
         box-sizing: border-box;
+        overflow-x: auto;
+        @media (max-width: 959px){
+            padding: 0 10px;
+        }
+        @media (max-width: 479px){
+            padding: 0px;
+        }
     }
     &__img{
         display: none;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 862px;
     }
     .img__active{
         display: block;
@@ -100,6 +156,17 @@
         transition: 0.5s ease-in-out;
         transform: scaleY(0);
         transform-origin: 0 0;
+        @media (max-width: 959px){
+            flex-wrap: wrap;
+            row-gap: 15px;
+            column-gap: 13px;
+            justify-content: flex-start;
+            top: 40%;
+        }
+        @media (max-width: 519px){
+            column-gap: 0px;
+            padding: 2px;
+        }
     }
     .cities {
         &__overlay{
@@ -124,13 +191,67 @@
             gap: 10px;
             padding: 0;
             margin: 0;
+            @media (max-width: 959px){
+               flex-basis: 30%;
+               font-size: 14px;
+            }
+            @media (max-width: 519px){
+                font-size: 12px;
+                flex-basis: 33%;
+            }
+            &_dop{
+                @media (max-width: 519px){
+                    flex-basis: 39%;
+                }
+            }
         }
 
         &__title {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            @media (max-width: 959px){
+                cursor: pointer;
+            }
+            @media (max-width: 519px){
+                font-size: 12px;
+            }
+            &_txt{
+                margin: 0;
+                flex-shrink: 0;
+            }
+            &_svg{
+                display: none;
+                @media (max-width: 959px){
+                    display: block;
+                }
+                &_active{
+                    transform: rotate(180deg);
+                }
+            }
+            &_active{
+                color: #A30C33;
+            }
         }
 
         &__txt {
             font-weight: 400;
+            @media (max-width: 519px){
+                font-size: 12px;
+            }
+        }
+
+        &__submenu{
+            padding: 0;
+            list-style: none;
+            @media (max-width: 959px){
+                visibility: hidden;
+                position: absolute;
+            }
+            &_active{
+                visibility: visible;
+                position: relative;
+            }
         }
     }
 }

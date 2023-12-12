@@ -3,11 +3,23 @@
     max-width: 1110px;
     box-sizing: border-box;
     margin: 0 auto;
+    @media (max-width: 1199px){
+        max-width: 940px;
+    }
+    @media (max-width: 959px){
+        max-width: 640px;
+    }
+    @media (max-width: 639px){
+    }
     &__nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 58px;
+        padding: 0 5px;
+        @media (max-width: 479px){
+            margin-bottom: 13px;
+        }
     }
 
     &__title {
@@ -18,13 +30,9 @@
         display: flex;
         align-items: center;
         gap: 20px;
-    }
-
-    &__pagination {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
+        @media (max-width: 479px){
+            display: none;
+        }
     }
 }
 .arrow {
@@ -37,9 +45,26 @@
         stroke: #F0F0F0;
         transition: .3s;
     }
+    @media (max-width: 959px){
+        width: 46px;
+        height: 46px;
+    }
+    @media (max-width: 639px){
+        width: 40px;
+        height: 40px;
+    }
+}
+.swiper{
+    @media (max-width: 479px){
+        padding: 0 5px !important;
+    }
 }
 .swiper-wrapper {
     margin-bottom: 28px;
+}
+.swiper-img{
+    width: 100%;
+    object-fit: contain;
 }
 .swiper-pagination {
     display: flex;
@@ -47,6 +72,12 @@
     gap: 10px;
     position: relative !important;
     bottom: 0 !important;
+    padding: 0 5px;
+    width: 97% !important;
+    margin: 0 auto;
+    @media (max-width: 639px){
+        display: none;
+    }
 }
 .swiper-pagination-bullet{
     align-self: stretch !important;

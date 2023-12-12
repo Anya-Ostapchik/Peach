@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./dist/styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,270 +11,359 @@
 		<script defer src="./dist/index.js"></script>
 	</head>
 	<body>
-		<nav class="nav">
-			<div class="nav__logo">
-				<svg>
-					<use xlink:href="sprite.svg#logo"></use>
-				</svg>
-			</div>
-			<ul class="nav__list">
-				<li><a class="nav__link" href="#">Облачные решения</a></li>
-				<li><a class="nav__link" href="#">Кибербезопасность</a></li>
-				<li><a class="nav__link" href="#">Импортозамещение</a></li>
-				<li><a class="nav__link" href="#">Цифровая трансформация</a></li>
-			</ul>
-		</nav>
-		<main class="content">
-			<header class="header">
-				<div class="header__wrap">
-					<h1 class="header__title">Поставщик услуг цифровой трансформации <br> и кибербезопасности</h1>
-					<a href="#" class="header__btn">На сайт</a>
+		<div class="wrap">
+			<nav class="nav">
+				<div class="nav__logo">
+					<svg>
+						<use xlink:href="sprite.svg#logo"></use>
+					</svg>
 				</div>
-			</header>
-			<section class="about">
-				<p class="about__text"><span class="red">Softline</span> – ведущий поставщик IT-решений и сервисов.* <br> Мы предлагаем комплексные IT-решения, облака, программное <br> и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также широкий спектр IT-услуг.</p>
-			</section>
-			<section class="numbers">
-				<div class="numbers__item">
-					<p class="numbers__num">>30 лет</p>
-					<p class="numbers__txt">на IT-рынке</p>
-				</div>
-				<div class="numbers__item">
-					<p class="numbers__num">4600</p>
-					<p class="numbers__txt">сотрудников в России</p>
-				</div>
-				<div class="numbers__item">
-					<p class="numbers__num">25</p>
-					<p class="numbers__txt">городов России</p>
-				</div>
-				<div class="numbers__item">
-					<p class="numbers__num">2000 <span class="numbers__num_plus">+</span></p>
-					<p class="numbers__txt">разработчиков</p>
-				</div>
-				<div class="numbers__item">
-					<p class="numbers__num">3000 <span class="numbers__num_plus">+</span></p>
-					<p class="numbers__txt">сотрудников ежегодно проходят оценку и обучение</p>
-				</div>
-			</section>
-			<section class="map">
-				<div class="map__nav">
-					<p id="map__dropdown-list" class="map__dropdown-list">Офисы Softline 
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-						<path d="M2.10156 7.99683L12.1016 16.0179L22.1016 7.99683" stroke="#444444" stroke-width="3"/>
-						</svg>
-					</p>
-					<ul class="map__list" id="map__list">
-						<li><a class="map__link link__active" href="#">Все</a></li>
-						<li><a class="map__link" href="#">Москва</a></li>
-						<li><a class="map__link" href="#">Центр</a></li>
-						<li><a class="map__link" href="#">Северо-Запад</a></li>
-						<li><a class="map__link" href="#">Юг</a></li>
-						<li><a class="map__link" href="#">Волга</a></li>
-						<li><a class="map__link" href="#">Урал</a></li>
-						<li><a class="map__link" href="#">Сибирь</a></li>
-						<li><a class="map__link" href="#">Дальний восток</a></li>
-					</ul>
-					<div class="cities__overlay cities__closed" id="cities__overlay"></div>
-					<div class="map__cities" id="map__cities">
-						<ul class="cities__list">
-							<li class="cities__title">Москва</li>
+				<ul class="nav__list">
+					<li><a class="nav__link" href="#">Облачные решения</a></li>
+					<li><a class="nav__link" href="#">Кибербезопасность</a></li>
+					<li><a class="nav__link" href="#">Импортозамещение</a></li>
+					<li><a class="nav__link" href="#">Цифровая трансформация</a></li>
+				</ul>
+			</nav>
+			<main class="content">
+				<header class="header">
+					<div class="header__wrap">
+						<h1 class="header__title">Поставщик услуг цифровой трансформации <br> и кибербезопасности</h1>
+						<a href="#" class="header__btn">На сайт</a>
+					</div>
+				</header>
+				<section class="about">
+					<p class="about__text"><span class="red">Softline</span> – ведущий поставщик IT-решений и сервисов.*</p>
+					<p class="about__text">Мы предлагаем комплексные IT-решения, облака, программное и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также широкий спектр IT-услуг.</p>
+				</section>
+				<section class="numbers">
+					<div class="numbers__item">
+						<p class="numbers__num">>30 лет</p>
+						<p class="numbers__txt">на IT-рынке</p>
+					</div>
+					<div class="numbers__item">
+						<p class="numbers__num">4600</p>
+						<p class="numbers__txt">сотрудников в России</p>
+					</div>
+					<div class="numbers__item">
+						<p class="numbers__num">25</p>
+						<p class="numbers__txt">городов России</p>
+					</div>
+					<div class="numbers__item">
+						<p class="numbers__num">2000 <span class="numbers__num_plus">+</span></p>
+						<p class="numbers__txt">разработчиков</p>
+					</div>
+					<div class="numbers__item">
+						<p class="numbers__num">3000 <span class="numbers__num_plus">+</span></p>
+						<p class="numbers__txt">сотрудников ежегодно проходят оценку и обучение</p>
+					</div>
+				</section>
+				<section class="map">
+					<div class="map__nav">
+						<p id="map__dropdown-list" class="map__dropdown-list">Офисы Softline 
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path d="M2.10156 7.99683L12.1016 16.0179L22.1016 7.99683" stroke="#444444" stroke-width="3"/>
+							</svg>
+						</p>
+						<ul class="map__list" id="map__list">
+							<li><a class="map__link link__active" href="#">Все</a></li>
+							<li><a class="map__link" href="#">Москва</a></li>
+							<li><a class="map__link" href="#">Центр</a></li>
+							<li><a class="map__link" href="#">Северо-Запад</a></li>
+							<li><a class="map__link" href="#">Юг</a></li>
+							<li><a class="map__link" href="#">Волга</a></li>
+							<li><a class="map__link" href="#">Урал</a></li>
+							<li><a class="map__link" href="#">Сибирь</a></li>
+							<li><a class="map__link" href="#">Дальний восток</a></li>
 						</ul>
-						<ul class="cities__list">
-							<li class="cities__title">Центр</li>
-							<li class="cities__txt">Воронеж</li>
-							<li class="cities__txt">Ярославль</li>
-							<li class="cities__txt">Белгород</li>
-						</ul>
-						<ul class="cities__list">
-							<li class="cities__title">Северо-Запад</li>
-							<li class="cities__txt">Санкт-Петербург</li>
-							<li class="cities__txt">Калининград</li>
-						</ul>
-						<ul class="cities__list">
-							<li class="cities__title">Юг</li>
-							<li class="cities__txt">Ростов-на-Дону</li>
-							<li class="cities__txt">Краснодар</li>
-							<li class="cities__txt">Волгоград</li>
-						</ul>
-						<ul class="cities__list">
-							<li class="cities__title">Волга</li>
-							<li class="cities__txt">Казань</li>
-							<li class="cities__txt">Самара</li>
-							<li class="cities__txt">Уфа</li>
-							<li class="cities__txt">Оренбург</li>
-							<li class="cities__txt">Нижний Новгород</li>
-						</ul>
-						<ul class="cities__list">
-							<li class="cities__title">Урал</li>
-							<li class="cities__txt">Екатеринбург</li>
-							<li class="cities__txt">Челябинск</li>
-							<li class="cities__txt">Пермь</li>
-							<li class="cities__txt">Сургут</li>
-							<li class="cities__txt">Тюмень</li>
-							<li class="cities__txt">Ижевск</li>
-						</ul>
-						<ul class="cities__list">
-							<li class="cities__title">Сибирь</li>
-							<li class="cities__txt">Новосибирск</li>
-							<li class="cities__txt">Омск</li>
-							<li class="cities__txt">Томск</li>
-							<li class="cities__txt">Красноярск</li>
-							<li class="cities__txt">Иркутск</li>
-						</ul>
-						<ul class="cities__list">
-							<li class="cities__title">Дальний Восток</li>
-							<li class="cities__txt">Хабаровск</li>
-							<li class="cities__txt">Владивосток</li>
-						</ul>
-					</div>
-				</div>
-				<div class="map__imgs" id="map__img">
-					<img class="map__img img__active" src="src/imgs/map__all.svg" alt="">
-					<img class="map__img" src="src/imgs/map__Moscow.svg" alt="">
-					<img class="map__img" src="src/imgs/map__center.svg" alt="">
-					<img class="map__img" src="src/imgs/map__northwest.svg" alt="">
-					<img class="map__img" src="src/imgs/map__south.svg" alt="">
-					<img class="map__img" src="src/imgs/map__volga.svg" alt="">
-					<img class="map__img" src="src/imgs/map__urals.svg" alt="">
-					<img class="map__img" src="src/imgs/map__siberia.svg" alt="">
-					<img class="map__img" src="src/imgs/map__far-east.svg" alt="">
-				</div>
-			</section>
-			<section class="mission">
-				<img class="mission__img_1" src="src/imgs/bg.svg" alt="">
-				<div class="mission__content">
-					<h2 class="mission__title">Миссия Softline</h2>
-					<p class="mission__txt">Мы помогаем организациям трансформироваться, работать эффективно и безопасно в условиях цифровой экономики.</p>
-				</div>
-				<img class="mission__img_2" src="src/imgs/bg.svg" alt="">
-			</section>
-			<section class="cards">
-				<h2 class="cards__title">Направления бизнеса</h2>
-				<div class="cards__items">
-					<div class="cards__item">
-						<img class="cards__img" src="src/imgs/cards1.png" alt="">
-						<div class="cards__desc">
-							<h3 class="cards__name">Решения Softline</h3>
-							<p class="cards__txt">ГК Softline предлагает клиентам собственную линейку оборудования (ПК, серверы, торговое оборудование и проч.), разработку программных продуктов, облачных решений, решений в области информационной безопасности.</p>
+						<div class="cities__overlay cities__closed" id="cities__overlay"></div>
+						<div class="map__cities" id="map__cities">
+							<ul class="cities__list">
+								<li class="cities__title">
+									<p class="cities__title_txt">Москва</p> 
+									<svg class="cities__title_svg" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+									<path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444"/>
+									</svg>
+								</li>
+								<ul class="cities__submenu"></ul>
+							</ul>
+							<ul class="cities__list">
+								<li class="cities__title">
+									<p class="cities__title_txt">Центр</p>
+									<svg class="cities__title_svg" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+									<path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444"/>
+									</svg>
+								</li>
+								<ul class="cities__submenu">
+									<li class="cities__txt">Воронеж</li>
+									<li class="cities__txt">Ярославль</li>
+									<li class="cities__txt">Белгород</li>
+								</ul>
+							</ul>
+							<ul class="cities__list">
+								<li class="cities__title">
+									<p class="cities__title_txt">Северо-Запад</p>
+									<svg class="cities__title_svg" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+									<path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444"/>
+									</svg>
+								</li>
+								<ul class="cities__submenu">
+									<li class="cities__txt">Санкт-Петербург</li>
+									<li class="cities__txt">Калининград</li>
+								</ul>
+							</ul>
+							<ul class="cities__list">
+								<li class="cities__title">
+									<p class="cities__title_txt">Юг</p>
+									<svg class="cities__title_svg" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+									<path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444"/>
+									</svg>
+								</li>
+								<ul class="cities__submenu">
+									<li class="cities__txt">Ростов-на-Дону</li>
+									<li class="cities__txt">Краснодар</li>
+									<li class="cities__txt">Волгоград</li>
+								</ul>
+							</ul>
+							<ul class="cities__list">
+								<li class="cities__title">
+									<p class="cities__title_txt">Волга</p>
+									<svg class="cities__title_svg" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+									<path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444"/>
+									</svg>
+								</li>
+								<ul class="cities__submenu">
+									<li class="cities__txt">Казань</li>
+									<li class="cities__txt">Самара</li>
+									<li class="cities__txt">Уфа</li>
+									<li class="cities__txt">Оренбург</li>
+									<li class="cities__txt">Нижний Новгород</li>
+								</ul>
+							</ul>
+							<ul class="cities__list">
+								<li class="cities__title">
+									<p class="cities__title_txt">Урал</p>
+									<svg class="cities__title_svg" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+									<path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444"/>
+									</svg>
+								</li>
+								<ul class="cities__submenu">
+									<li class="cities__txt">Екатеринбург</li>
+									<li class="cities__txt">Челябинск</li>
+									<li class="cities__txt">Пермь</li>
+									<li class="cities__txt">Сургут</li>
+									<li class="cities__txt">Тюмень</li>
+									<li class="cities__txt">Ижевск</li>
+								</ul>
+							</ul>
+							<ul class="cities__list">
+								<li class="cities__title">
+									<p class="cities__title_txt">Сибирь</p>
+									<svg class="cities__title_svg" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+									<path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444"/>
+									</svg>
+								</li>
+								<ul class="cities__submenu">
+									<li class="cities__txt">Новосибирск</li>
+									<li class="cities__txt">Омск</li>
+									<li class="cities__txt">Томск</li>
+									<li class="cities__txt">Красноярск</li>
+									<li class="cities__txt">Иркутск</li>
+								</ul>
+							</ul>
+							<ul class="cities__list cities__list_dop">
+								<li class="cities__title">
+									<p class="cities__title_txt">Дальний Восток</p>
+									<svg class="cities__title_svg" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+									<path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444"/>
+									</svg>
+								</li>
+								<ul class="cities__submenu">
+									<li class="cities__txt">Хабаровск</li>
+									<li class="cities__txt">Владивосток</li>
+								</ul>
+							</ul>
 						</div>
 					</div>
-					<div class="cards__item">
-						<img class="cards__img" src="src/imgs/cards2.png" alt="">
-						<div class="cards__desc">
-							<h3 class="cards__name">Кибербезопасность</h3>
-							<p class="cards__txt">Softline обладает всеми необходимыми государственными лицензиями для организации проектов по информационной безопасности и аттестации.</p>
+					<div class="map__imgs" id="map__img">
+						<img class="map__img img__active" src="src/imgs/map__all.svg" alt="">
+						<img class="map__img" src="src/imgs/map__Moscow.svg" alt="">
+						<img class="map__img" src="src/imgs/map__center.svg" alt="">
+						<img class="map__img" src="src/imgs/map__northwest.svg" alt="">
+						<img class="map__img" src="src/imgs/map__south.svg" alt="">
+						<img class="map__img" src="src/imgs/map__volga.svg" alt="">
+						<img class="map__img" src="src/imgs/map__urals.svg" alt="">
+						<img class="map__img" src="src/imgs/map__siberia.svg" alt="">
+						<img class="map__img" src="src/imgs/map__far-east.svg" alt="">
+					</div>
+				</section>
+				<section class="mission">
+					<img class="mission__img_1" src="src/imgs/bg.svg" alt="">
+					<div class="mission__content">
+						<h2 class="mission__title">Миссия Softline</h2>
+						<p class="mission__txt">Мы помогаем организациям трансформироваться, работать эффективно и безопасно в условиях цифровой экономики.</p>
+					</div>
+					<img class="mission__img_2" src="src/imgs/bg.svg" alt="">
+				</section>
+				<section class="cards">
+					<h2 class="cards__title">Направления бизнеса</h2>
+					<div class="cards__items">
+						<div class="cards__item">
+							<img class="cards__img" src="src/imgs/cards1.png" alt="">
+							<div class="cards__desc">
+								<div class="name__wrap">
+									<h3 class="cards__name">Решения Softline</h3>
+									<svg class="cards__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
+										<path d="M1.57129 0.785767L7.99986 7.21434L14.4284 0.785767" stroke="white" stroke-width="2"/>
+									</svg>
+								</div>
+								<p class="cards__txt">ГК Softline предлагает клиентам собственную линейку оборудования (ПК, серверы, торговое оборудование и проч.), разработку программных продуктов, облачных решений, решений в области информационной безопасности.</p>
+							</div>
+						</div>
+						<div class="cards__item">
+							<img class="cards__img" src="src/imgs/cards2.png" alt="">
+							<div class="cards__desc">
+								<div class="name__wrap">
+									<h3 class="cards__name">Кибербезопасность</h3>
+									<svg class="cards__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
+										<path d="M1.57129 0.785767L7.99986 7.21434L14.4284 0.785767" stroke="white" stroke-width="2"/>
+									</svg>
+								</div>
+								<p class="cards__txt">Softline обладает всеми необходимыми государственными лицензиями для организации проектов по информационной безопасности и аттестации.</p>
+							</div>
+						</div>
+						<div class="cards__item">
+							<img class="cards__img" src="src/imgs/cards3.png" alt="">
+							<div class="cards__desc">
+								<div class="name__wrap">
+									<h3 class="cards__name">Импортозамещение</h3>
+									<svg class="cards__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
+										<path d="M1.57129 0.785767L7.99986 7.21434L14.4284 0.785767" stroke="white" stroke-width="2"/>
+									</svg>
+								</div>
+								<p class="cards__txt">ГК Softline обладает широчайшим портфелем решений и услуг для импортозамещения, включая ПО и оборудование собственного производства.</p>
+							</div>
+						</div>
+						<div class="cards__item">
+							<img class="cards__img" src="src/imgs/cards4.png" alt="">
+							<div class="cards__desc">
+								<div class="name__wrap">
+									<h3 class="cards__name">Облачные решения</h3>
+									<svg class="cards__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
+										<path d="M1.57129 0.785767L7.99986 7.21434L14.4284 0.785767" stroke="white" stroke-width="2"/>
+									</svg>
+								</div>
+								<p class="cards__txt">Softline использует современные облачные решения как российских, так и международных вендоров для масштабирования бизнеса своих клиентов. Подписки, услуги, трансформация.</p>
+							</div>
+						</div>
+						<div class="cards__item">
+							<img class="cards__img" src="src/imgs/cards5.png" alt="">
+							<div class="cards__desc cards__pad">
+								<div class="name__wrap">
+									<h3 class="cards__name">Цифровая трансформация <br> и разработка ПО</h3>
+									<svg class="cards__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
+										<path d="M1.57129 0.785767L7.99986 7.21434L14.4284 0.785767" stroke="white" stroke-width="2"/>
+									</svg>
+								</div>
+								<p class="cards__txt">Softline использует современные технологи и новые возможности для увеличения производительности бизнеса заказчика. В штате ГК Softline - 2000+ разработчиков, которые трансформируют ПО под нужды конкретного предприятия.</p>
+							</div>
+						</div>
+						<div class="cards__item">
+							<img class="cards__img" src="src/imgs/cards6.png" alt="">
+							<div class="cards__desc">
+								<div class="name__wrap">
+									<h3 class="cards__name">Техническая поддержка Softline</h3>
+									<svg class="cards__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
+										<path d="M1.57129 0.785767L7.99986 7.21434L14.4284 0.785767" stroke="white" stroke-width="2"/>
+									</svg>
+								</div>
+								<p class="cards__txt">200+ инженеров, 24 часа в сутки, 7 дней в неделю, 12 месяцев в году, сервисное партнерство с 30+ мировыми производителями.</p>
+							</div>
 						</div>
 					</div>
-					<div class="cards__item">
-						<img class="cards__img" src="src/imgs/cards3.png" alt="">
-						<div class="cards__desc">
-							<h3 class="cards__name">Импортозамещение</h3>
-							<p class="cards__txt">ГК Softline обладает широчайшим портфелем решений и услуг для импортозамещения, включая ПО и оборудование собственного производства.</p>
+				</section>
+				<section class="benefits">
+					<div class="benefits__compensation">
+						<h2 class="compensation__title">Компенсационный пакет</h2>
+						<div class="benefits__items">
+							<div class="benefits__item">
+								<img class="benefits__img" src="src/imgs/compensation1.svg" alt="">
+								<p class="benefits__txt">Дмс</p>
+							</div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="src/imgs/compensation2.svg" alt="">
+								<p class="benefits__txt">Выходной <br> в день рождения</p>
+							</div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="src/imgs/compensation3.svg" alt="">
+								<p class="benefits__txt">Корпоративная мобильная связь</p>
+							</div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="src/imgs/compensation4.svg" alt="">
+								<p class="benefits__txt">Корпоративные скидки на спорт</p>
+							</div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="src/imgs/compensation5.svg" alt="">
+								<p class="benefits__txt">LTI</p>
+							</div>
 						</div>
 					</div>
-					<div class="cards__item">
-						<img class="cards__img" src="src/imgs/cards4.png" alt="">
-						<div class="cards__desc">
-							<h3 class="cards__name">Облачные решения</h3>
-							<p class="cards__txt">Softline использует современные облачные решения как российских, так и международных вендоров для масштабирования бизнеса своих клиентов. Подписки, услуги, трансформация.</p>
+					<hr class="benefits__line">
+					<div class="benefits__motivation">
+						<p class="motivation__title ">Программа дополнительной мотивации <p class="motivation__title motivation__title_red ">доплата 12% от суммы</p></p>
+						<div class="benefits__items motivation__items">
+							<div class="benefits__item">
+								<img class="benefits__img" src="src/imgs/benefits1.svg" alt="">
+								<p class="benefits__txt">Оргтехники</p>
+							</div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="src/imgs/benefits2.svg" alt="">
+								<p class="benefits__txt">ДМС</p>
+							</div>
+							<div class="benefits__item">
+								<img class="benefits__img" src="src/imgs/benefits3.svg" alt="">
+								<p class="benefits__txt">Ипотеки</p>
+							</div>
 						</div>
 					</div>
-					<div class="cards__item">
-						<img class="cards__img" src="src/imgs/cards5.png" alt="">
-						<div class="cards__desc cards__pad">
-							<h3 class="cards__name">Цифровая трансформация <br> и разработка ПО</h3>
-							<p class="cards__txt">Softline использует современные технологи и новые возможности для увеличения производительности бизнеса заказчика. В штате ГК Softline - 2000+ разработчиков, которые трансформируют ПО под нужды конкретного предприятия.</p>
+				</section>
+				<section class="gallery">
+					<div class="gallery__nav">
+						<h2 class="gallery__title">Корпоративная жизнь</h2>
+						<div class="gallery__arrows">
+							<svg class="arrow__left arrow" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+								<rect width="56" height="56" rx="28" transform="matrix(-1 0 0 1 56 0)" fill="#F0F0F0"/>
+								<path d="M33 18L23 28L33 38" stroke="#A30C33" stroke-width="2"/>
+							</svg>
+							<svg class="arrow__right arrow" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+								<rect width="56" height="56" rx="28" fill="#F0F0F0"/>
+								<path d="M23 18L33 28L23 38" stroke="#A30C33" stroke-width="2"/>
+							  </svg>
 						</div>
 					</div>
-					<div class="cards__item">
-						<img class="cards__img" src="src/imgs/cards6.png" alt="">
-						<div class="cards__desc">
-							<h3 class="cards__name">Техническая поддержка Softline</h3>
-							<p class="cards__txt">200+ инженеров, 24 часа в сутки, 7 дней в неделю, 12 месяцев в году, сервисное партнерство с 30+ мировыми производителями.</p>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+						  <div class="swiper-slide">
+							<img class="swiper-img" src="src/imgs/slide1.png" alt="">
+						  </div>
+						  <div class="swiper-slide">
+							<img class="swiper-img" src="src/imgs/slide2.png" alt="">
+						  </div>
+						  <div class="swiper-slide">
+							<img class="swiper-img" src="src/imgs/slide3.png" alt="">
+						  </div>
+						  <div class="swiper-slide">
+							<img class="swiper-img" src="src/imgs/slide4.png" alt="">
+						  </div>
+						  <div class="swiper-slide">
+							<img class="swiper-img" src="src/imgs/slide5.png" alt="">
+						  </div>
 						</div>
-					</div>
-				</div>
-			</section>
-			<section class="benefits">
-				<div class="benefits__compensation">
-					<h2 class="compensation__title">Компенсационный пакет</h2>
-					<div class="benefits__items">
-						<div class="benefits__item">
-							<img class="benefits__img" src="src/imgs/compensation1.svg" alt="">
-							<p class="benefits__txt">Дмс</p>
-						</div>
-						<div class="benefits__item">
-							<img class="benefits__img" src="src/imgs/compensation2.svg" alt="">
-							<p class="benefits__txt">Выходной <br> в день рождения</p>
-						</div>
-						<div class="benefits__item">
-							<img class="benefits__img" src="src/imgs/compensation3.svg" alt="">
-							<p class="benefits__txt">Корпоративная мобильная связь</p>
-						</div>
-						<div class="benefits__item">
-							<img class="benefits__img" src="src/imgs/compensation4.svg" alt="">
-							<p class="benefits__txt">Корпоративные скидки на спорт</p>
-						</div>
-						<div class="benefits__item">
-							<img class="benefits__img" src="src/imgs/compensation5.svg" alt="">
-							<p class="benefits__txt">LTI</p>
-						</div>
-					</div>
-				</div>
-				<div class="benefits__motivation">
-					<p class="motivation__title">Программа дополнительной мотивации <span class="motivation__title_red">доплата 12% от суммы</span></p>
-					<div class="benefits__items motivation__items">
-						<div class="benefits__item">
-							<img class="benefits__img" src="src/imgs/benefits1.svg" alt="">
-							<p class="benefits__txt">Оргтехники</p>
-						</div>
-						<div class="benefits__item">
-							<img class="benefits__img" src="src/imgs/benefits2.svg" alt="">
-							<p class="benefits__txt">ДМС</p>
-						</div>
-						<div class="benefits__item">
-							<img class="benefits__img" src="src/imgs/benefits3.svg" alt="">
-							<p class="benefits__txt">Ипотеки</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="gallery">
-				<div class="gallery__nav">
-					<h2 class="gallery__title">Корпоративная жизнь</h2>
-					<div class="gallery__arrows">
-						<svg class="arrow__left arrow" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-							<rect width="56" height="56" rx="28" transform="matrix(-1 0 0 1 56 0)" fill="#F0F0F0"/>
-							<path d="M33 18L23 28L33 38" stroke="#A30C33" stroke-width="2"/>
-						</svg>
-						<svg class="arrow__right arrow" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-							<rect width="56" height="56" rx="28" fill="#F0F0F0"/>
-							<path d="M23 18L33 28L23 38" stroke="#A30C33" stroke-width="2"/>
-						  </svg>
-					</div>
-				</div>
-				<div class="swiper mySwiper">
-					<div class="swiper-wrapper">
-					  <div class="swiper-slide">
-						<img src="src/imgs/slide1.png" alt="">
+						<div class="swiper-pagination"></div>
 					  </div>
-					  <div class="swiper-slide">
-						<img src="src/imgs/slide2.png" alt="">
-					  </div>
-					  <div class="swiper-slide">
-						<img src="src/imgs/slide3.png" alt="">
-					  </div>
-					  <div class="swiper-slide">
-						<img src="src/imgs/slide4.png" alt="">
-					  </div>
-					  <div class="swiper-slide">
-						<img src="src/imgs/slide5.png" alt="">
-					  </div>
-					</div>
-					<div class="swiper-pagination"></div>
-				  </div>
-			</section>
-		</main>
+				</section>
+			</main>
+		</div>
 		<script src="src/script/script.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script>

@@ -8,16 +8,39 @@
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: 1199px){
+        max-width: 940px;
+    }
+    @media (max-width: 959px){
+        max-width: 640px;
+    }
     &__wrap{
         position: relative;
         top: 24%;
         padding: 156px 70px;
+        @media (max-width: 639px){
+            padding: 156px 30px;
+        }
+        @media (max-width: 479px){
+            padding: 43px 6px 95px;
+        }
     }
     &__title {
         @include title(#444);
         line-height: 113%;
         max-width: 709px;
         margin: 0 0 64px 0;
+        @media (max-width: 959px){
+            line-height: 105%;
+        }
+        @media (max-width: 639px){
+            max-width: 100%;
+            margin-bottom: 44px;
+        }
+        @media (max-width: 479px){
+            line-height: 115%;
+            margin-bottom: 20px;
+        }
     }
 
     &__btn {
@@ -32,6 +55,13 @@
         transition: .3s;
         &:hover{
             background: #D43152;
+        }
+        @media (max-width: 639px){
+            padding: 13px 34px;
+        }
+        @media (max-width: 479px){
+            padding: 7px 27px;
+            line-height: 18px;
         }
     }
 }
